@@ -1,0 +1,41 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+
+# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+export PATH
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+if [ -d ~/.bashrc.d ]; then
+    for rc in ~/.bashrc.d/*; do
+        if [ -f "$rc" ]; then
+            . "$rc"
+        fi
+    done
+fi
+unset rc
+
+complete -C /usr/bin/terraform terraform
+
+# User specific environment and startup programs
+alias md='mkcd'
+
+# Create folder(s) and cd when only one argument is provided
+function mkcd()
+{
+    mkdir -p $@
+    if [[ "$#" -eq 1 ]]; then
+        cd $@ 
+    fi
+}
+
+
