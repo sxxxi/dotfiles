@@ -1,7 +1,7 @@
 # Dotfiles
 ```sh
 cd ~    
-git clone <repo> .dotfiles
+git clone https://github.com/sxxxi/dotfiles .dotfiles
 
 ```
 
