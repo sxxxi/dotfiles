@@ -29,4 +29,8 @@ vim.opt.shiftround = true
 
 -- File system settings
 vim.opt.autoread = true        -- Automatically read file when changed outside of the file
-vim.opt.clipboard = 'unnamedplus' -- Use the system clipboard
+vim.opt.clipboard = "unnamedplus" -- Use the system clipboard
+
+-- Nvimtree
+-- vim.g.loaded_netrw = 1
+-- vim.g.loaded_netrwPlugin = 1
