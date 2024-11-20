@@ -28,6 +28,9 @@ linkAppConfig() {
 
 	# Neovim
 	[ $(command -v nvim) ] && confirmAndLink "$CONFIG/nvim" "$HOME/.config/nvim";
+
+	# Tmux
+	[ $(command -v tmux) ] && confirmAndLink "$CONFIG/tmux/tmux.conf" "$HOME/.tmux.conf";
 }
 
 confirmAndLink() {
