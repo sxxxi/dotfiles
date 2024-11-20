@@ -1,18 +1,18 @@
 -- Interface settings
-vim.cmd.colorscheme("dracula")
+vim.cmd.colorscheme("kanagawa-wave")
 vim.opt.termguicolors = true
 vim.opt.title = false
-vim.opt.titlestring = 'It\'s hacking time'
-vim.opt.syntax = 'enable'
+vim.opt.titlestring = "It\"s hacking time"
+vim.opt.syntax = "enable"
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.wrap = true              -- Enable line wrapping
 vim.opt.linebreak = true         -- Wrap at word boundaries
-vim.opt.showbreak = '↪'          -- Show a symbol at the start of wrapped lines
+vim.opt.showbreak = "↪"          -- Show a symbol at the start of wrapped lines
 vim.opt.wildmenu = true          -- Enable enhanced command-line completion
-vim.opt.wildmode = 'longest:full' -- Completion mode for commands
+vim.opt.wildmode = "longest:full" -- Completion mode for commands
 vim.opt.list = true              -- Show whitespace characters
-vim.opt.listchars = { tab = '  ', trail = '·', space = ' ' } -- Custom symbols for whitespace
+vim.opt.listchars = { tab = "  ", trail = "·", space = " " } -- Custom symbols for whitespace
 
 -- Search
 vim.opt.hlsearch = true          -- Highlight all matches of search
