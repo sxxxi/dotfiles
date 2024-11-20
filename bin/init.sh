@@ -18,6 +18,7 @@ linkAppConfig() {
 		confirmAndLink "$CONFIG/zsh/zprofile.sh" "$HOME/.zprofile";
 		confirmAndLink "$CONFIG/zsh/zshrc.sh" "$HOME/.zshrc";
 		[ ! -f ~/.hushlogin ] && touch ~/.hushlogin;
+		# TODO: Maybe I should run source here? command might not catch nvim
 	fi
 	
 	# Alacritty
