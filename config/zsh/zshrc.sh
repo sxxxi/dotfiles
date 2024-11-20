@@ -1,3 +1,9 @@
+# Enter tmux everytime
+if [ "$TMUX" = "" ]; then 
+	tmux a || tmux new -sGrind;
+fi
+
+
 # |=============================|
 # |		Function Definitions	|
 # |=============================|
