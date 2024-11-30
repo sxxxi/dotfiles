@@ -1,19 +1,19 @@
 # Dotfiles
+
+## Setup
 ```sh
-cd ~    
 git clone https://github.com/sxxxi/dotfiles $HOME/.dotfiles
-
+cd ~/.dotfiles && stow .    # Make sure to remove old symlinks
 ```
 
-# System level dependencies
-## Nvim
-#### Telescope
-- ripgrep
-- fd
+## Notes
+* Notes here :)
 
-# Variables
-```sh
-CONFIG=$HOME/.dotfiles/config               # Directory containing app configuration files
-DOTFILES_BAK_DIR=$HOME/.dotfiles/bak        # Directory to backup overwritten files
-```
-
+## Dependencies
+* Alacritty
+* zsh
+* nvim
+* ripgrep
+* fd
+* tmux
+* stow

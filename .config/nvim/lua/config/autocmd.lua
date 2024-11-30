@@ -14,8 +14,17 @@ vim.api.nvim_create_autocmd("BufLeave", {
     end
 })
 
+-- File specific configs
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = { "jsonc", "json", "lua", "javascript", "typescript", "javascriptreact", "typescriptreact" },
+	callback = function()
+		vim.opt.tabstop = 2
+		vim.opt.shiftwidth = 2
+	end
+})
+
 -- Open file explorer on startup
-vim.api.nvim_create_autocmd("VimEnter", {
+vim.api.nvim_create_autocmd("FocusLost", {
 	callback = function()
 		-- Open only if current buffer is an empty file
 		if vim.fn.bufname("%") == "" then
