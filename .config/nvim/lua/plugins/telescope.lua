@@ -12,6 +12,8 @@ return {
 					file_browser = {
 						grouped = true,
 						sorting_strategy = "ascending",
+						hidden = true,
+						respect_gitignore = false,
 					}
 				}
 			}

@@ -12,7 +12,7 @@ vim.opt.showbreak = "↪"          -- Show a symbol at the start of wrapped line
 vim.opt.wildmenu = true          -- Enable enhanced command-line completion
 vim.opt.wildmode = "longest:full" -- Completion mode for commands
 vim.opt.list = true              -- Show whitespace characters
-vim.opt.listchars = { tab = "  ", trail = "·", space = " " } -- Custom symbols for whitespace
+-- vim.opt.listchars = { tab = "  ", trail = " ", space = " " } -- Custom symbols for whitespace
 
 -- Search
 vim.opt.hlsearch = true          -- Highlight all matches of search
@@ -22,9 +22,10 @@ vim.opt.smartcase = true         -- Override ignorecase if search includes upper
 
 -- Indentation settings
 vim.opt.tabstop = 4
-vim.opt.expandtab = false
-vim.opt.smarttab = true
 vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
+vim.opt.expandtab = true
+vim.opt.smarttab = true
 vim.opt.shiftround = true
 
 -- File system settings

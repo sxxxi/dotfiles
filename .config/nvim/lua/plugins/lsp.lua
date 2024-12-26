@@ -34,6 +34,9 @@ return {
 	{ 
 		"neovim/nvim-lspconfig",
 		config = function()
+			require('java').setup()
+			require('lspconfig').jdtls.setup({})
+
 			-- Reserve a space in the gutter
 			vim.opt.signcolumn = 'yes'
 
