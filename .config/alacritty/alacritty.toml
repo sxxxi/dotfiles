@@ -1,8 +1,9 @@
+[terminal]
+shell = "/bin/zsh"
+
 [window]
 decorations = "Full"
 startup_mode = "Maximized"
-opacity = 0.9
-blur = true
 dynamic_title = false
 title = ""
 decorations_theme_variant = "Dark"
@@ -18,5 +19,5 @@ bindings = [
 [font]
 normal.family = "JetBrainsMono Nerd Font Mono"
 normal.style = "Thin"
-size = 18
+size = 16
 
